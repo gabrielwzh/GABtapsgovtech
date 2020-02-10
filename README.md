@@ -1,3 +1,4 @@
+# GovTech TAPS assessment
 The TAPS coding assessment as part of GovTech's interview process <br/>
 Developed a web & mobile application
 
@@ -14,7 +15,7 @@ Project is created with:
 ## Installation
 To run the React project you will have to install following components in your environment.
 
-Node.js: https://nodejs.org/en/
+Node.js: https://nodejs.org/en/ <br/>
 npm: https://npmjs.com
 
 ## Run project
