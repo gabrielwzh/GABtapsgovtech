@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "https//gabrielwzh.github.io/GABtapsgovtech/static/css/main.f57a241a.chunk.css",
+    "main.js": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/main.871c88a5.chunk.js",
+    "main.js.map": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/main.871c88a5.chunk.js.map",
+    "runtime-main.js": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/runtime-main.185fed1d.js",
+    "runtime-main.js.map": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/runtime-main.185fed1d.js.map",
+    "static/css/2.acaa75eb.chunk.css": "https//gabrielwzh.github.io/GABtapsgovtech/static/css/2.acaa75eb.chunk.css",
+    "static/js/2.c703e071.chunk.js": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/2.c703e071.chunk.js",
+    "static/js/2.c703e071.chunk.js.map": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/2.c703e071.chunk.js.map",
+    "index.html": "https//gabrielwzh.github.io/GABtapsgovtech/index.html",
+    "precache-manifest.e35f47a4176a309b423c0759d03d51d9.js": "https//gabrielwzh.github.io/GABtapsgovtech/precache-manifest.e35f47a4176a309b423c0759d03d51d9.js",
+    "service-worker.js": "https//gabrielwzh.github.io/GABtapsgovtech/service-worker.js",
+    "static/css/2.acaa75eb.chunk.css.map": "https//gabrielwzh.github.io/GABtapsgovtech/static/css/2.acaa75eb.chunk.css.map",
+    "static/css/main.f57a241a.chunk.css.map": "https//gabrielwzh.github.io/GABtapsgovtech/static/css/main.f57a241a.chunk.css.map",
+    "static/js/2.c703e071.chunk.js.LICENSE.txt": "https//gabrielwzh.github.io/GABtapsgovtech/static/js/2.c703e071.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.185fed1d.js",
+    "static/css/2.acaa75eb.chunk.css",
+    "static/js/2.c703e071.chunk.js",
+    "static/css/main.f57a241a.chunk.css",
+    "static/js/main.871c88a5.chunk.js"
+  ]
+}
