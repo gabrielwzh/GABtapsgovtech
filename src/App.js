@@ -53,8 +53,13 @@ class App extends Component {
       this.handleChangeLocation = this.handleChangeLocation.bind(this);
       console.log(this.state.time.format('HH:mm:ss'))
       this.fetchTraffic();
-      this.fetch2hrsWeather();
-      this.fetch1dayWeather();      
+      setTimeout(() => {
+        this.fetch2hrsWeather();
+      }, 300);
+      setTimeout(() => {
+        this.fetch1dayWeather();   
+      }, 600);
+      
     }
 
     componentDidMount() {
@@ -66,7 +71,7 @@ class App extends Component {
     }
 
     handleWindowSizeChange = () => {
-      this.setState({ width: window.innerWidth });
+      this.setState({ screenWidth: window.innerWidth });
     };
 
     handleChangeDate = val => {
@@ -76,11 +81,11 @@ class App extends Component {
         date: val,
         formatDate: dateFormat,
       });    
-      setTimeout(() => {
+
         this.fetchTraffic();
         this.fetch2hrsWeather();
         this.fetch1dayWeather();
-      }, 100);
+
     }    
 
     handleChangeTime = val => {
@@ -88,11 +93,11 @@ class App extends Component {
       this.setState({ 
         time: val 
       });
-      setTimeout(() => {
+
         this.fetchTraffic();
         this.fetch2hrsWeather();
         this.fetch1dayWeather();
-      }, 100);
+
     };
 
     handleChangeLocation(event) {
@@ -113,7 +118,12 @@ class App extends Component {
       let position = [];
       let region = [];
       let regionTown = [];
-      let currentlocation = '';      
+      let currentlocation = ''; 
+
+
+      // let testarray = [{camera: ['camera1', 'cam2', 'cam3']}];
+      // let testing = {userid: testarray};     
+      // console.log(testing);
 
       fetch ('https://api.data.gov.sg/v1/transport/traffic-images?date_time=' + this.state.formatDate + 'T' 
       + this.state.time.format('HH') + '%3A' + this.state.time.format('mm') + '%3A00')
@@ -140,6 +150,8 @@ class App extends Component {
           if (this.state.currentLocation === name[i])          
             currentlocation = position[i];          
         }
+
+
 
         this.setState({
           isLoadedTraffic: true,
@@ -182,12 +194,13 @@ class App extends Component {
          const dateend = moment(json2hrswea.items[0].valid_period.end);
 
         this.setState({
-          isLoadedWeather: true,
+         isLoadedWeather: true,
           twoHrsWeaCondi: condition,
           twoHrsWeaArea: area,
           twoHrsTimeStart: datestart.format('h:mm a'),
           twoHrsTimeEnd: dateend.format('h:mm a')
-        })     
+        })    
+       
       })
 
     }
@@ -279,7 +292,6 @@ class App extends Component {
             }
         }
 
-
         this.setState({
           oneDayMorning: morning,
           oneDayNoon: noon,
@@ -289,6 +301,7 @@ class App extends Component {
           oneDayNoonDate: noonDate,
           oneDayNightDate: nightDate,      
         })     
+
       })
 
     }
@@ -296,12 +309,12 @@ class App extends Component {
     
 
     render() {      
-
-      var { isLoadedTraffic, isLoadedWeather, dataTraffic, camKey, camKeyPos, locationCamName, weaKey, twoHrsWeaCondi, twoHrsWeaArea, 
+    
+      var { isLoadedTraffic, dataTraffic, camKey, camKeyPos, locationCamName, weaKey, twoHrsWeaCondi, twoHrsWeaArea, 
         twoHrsTimeStart, twoHrsTimeEnd, oneDayMorning, oneDayNoon, oneDayNight, region, time, oneDayTimeValid, oneDayMornDate, 
-        oneDayNoonDate, oneDayNightDate, screenWidth } = this.state;            
+        oneDayNoonDate, oneDayNightDate, screenWidth } = this.state;            // isLoadedWeather 
 
-      if (!isLoadedTraffic && !isLoadedWeather) {
+      if (!isLoadedTraffic)  { // && !isLoadedWeather)
         return <div> Loading.. </div>
       }
 
@@ -526,8 +539,9 @@ class App extends Component {
         );
       }
     }
-    }
 
+    
+    }
 
   }
 

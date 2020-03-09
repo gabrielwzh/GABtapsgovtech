@@ -17,7 +17,7 @@
     "react-scripts": "3.3.1",
     "react-tabs": "^3.1.0"
   },
-  "homepage": "https//gabrielwzh.github.io/GABtapsgovtech",
+  "homepage": "https://gabrielwzh.github.io/GABtapsgovtech",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
