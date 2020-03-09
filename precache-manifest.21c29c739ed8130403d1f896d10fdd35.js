@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "911c02488de8d506733c720f37070db4",
+    "revision": "e5ae63c4cf228525b6c86fabe0531a7e",
     "url": "/GABtapsgovtech/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GABtapsgovtech/static/css/2.acaa75eb.chunk.css"
   },
   {
-    "revision": "73ee0473ad7e269b7891",
+    "revision": "2369bb01fddaa0389bb4",
     "url": "/GABtapsgovtech/static/css/main.f57a241a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GABtapsgovtech/static/js/2.c703e071.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "73ee0473ad7e269b7891",
-    "url": "/GABtapsgovtech/static/js/main.2c199b18.chunk.js"
+    "revision": "2369bb01fddaa0389bb4",
+    "url": "/GABtapsgovtech/static/js/main.47243ffd.chunk.js"
   },
   {
     "revision": "726536563c0fa773c34a",

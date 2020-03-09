@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/GABtapsgovtech/precache-manifest.38d3345b846bc5f8d751cb6093cbbb4c.js"
+  "/GABtapsgovtech/precache-manifest.21c29c739ed8130403d1f896d10fdd35.js"
 );
 
 self.addEventListener('message', (event) => {
