@@ -1,5 +1,5 @@
 # SG Traffic Analysis
-Developed a single page application with ReactJS
+Developed a single page application with ReactJS <br/>
 https://gabrielwzh.github.io/GABtapsgovtech/
 
 # Requirements
